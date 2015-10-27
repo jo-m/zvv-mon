@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="10" >
+    <title>HTML5 boilerplate – all you really need…</title>
+    <link rel="stylesheet" href="static/icons.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/jquery-2.1.4.min.js"></script>
+    <script src="static/main.js"></script>
+  </head>
+  <body>
+    <h1>{{ station.name | safe }}</h1>
+    <div class="container">
+      {% for row in conns %}
+      <div class="conn" style="box-sizing: border-box;">
+        <div class="overview">
+          <div class="bar">
+            <div class="time item with-border">
+              {% if row.mainLocation.countdown | int >= 0 %}
+              In
+              {% endif %}
+              <b>
+              {{ row.mainLocation.countdown | int | abs }}
+              </b>
+              {% if row.mainLocation.countdown | int == 1 %}
+              minute
+              {% else %}
+              minutes
+              {% endif %}
+              {% if row.mainLocation.countdown | int < 0 %}
+              ago
+              {% endif %}
+            </div>
+            <div class="time-abs item with-border">
+              {{ row.mainLocation.time }}
+            </div>
+            <div class="product item with-border">
+              <span class="zvv_icon {{ row.product.icon }}"></span>
+              <span class='zvv_line'
+                style="background:#{{ row.product.color.bg }};
+			                 color:#{{ row.product.color.fg }};
+			                 {% if row.product.color.bg == 'FFFFFF' %}
+			                 border:1px solid #cbcbcb;
+			                 {% endif %}"
+                title="{{ row.product.name }}">
+              {{ row.product.line }}
+              </span>
+            </div>
+            <div class="direction item {% if row.himMessages | length > 0 %}with-border{% endif %}">
+              Direction {{ row.product.direction | safe }}{% if row.attributes_bfr | length > 0 %}, {{ row.attributes_bfr[0].text | safe }}{% endif %}
+            </div>
+            <div class="info item">
+              {% if row.himMessages | length > 0 %}
+              <a class="status">
+	              <i class="icon icon_disturbance"></i>
+              </a>
+              {% endif %}
+            </div>
+            <div class="info-text item">
+              {% if row.himMessages | length > 0 %}
+	              {{ row.himMessages[0].header | safe }}
+              {% endif %}
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

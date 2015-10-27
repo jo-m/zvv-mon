@@ -1,0 +1,1628 @@
+@font-face {
+  font-family: 'Icons';
+  src: url('Icons.eot?#iefix') format('eot'),
+       url('Icons.woff') format('woff'),
+       url('Icons.ttf') format('truetype'),
+       url('Icons.svg#Icons') format('svg');
+}
+
+
+.status .icon {
+    border: 0.11111em solid #0479cc;
+    width: 1.38889em;
+    height: 1.38889em;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    vertical-align: middle;
+    border-radius: 100%;
+    background: #fff;
+    color: #0479cc;
+    padding: 0;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.3, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.3, 1)
+}
+.status .icon:before {
+    font-size: 1.38889em
+}
+.status .icon.icon_cancelt,
+.status .icon.icon_disturbance {
+    border-color: #e2000f;
+    color: #e2000f
+}
+.status .icon.icon_ontime {
+    border-color: #239c36;
+    color: #239c36
+}
+.icon_aaaaaa:before,
+.icon_account:before,
+.icon_address:before,
+.icon_arrow:before,
+.icon_arrow_down:before,
+.icon_arrow_left:before,
+.icon_arrow_right:before,
+.icon_arrow_up:before,
+.icon_back:before,
+.icon_barsnclubs:before,
+.icon_bearbeitet_close:before,
+.icon_boat:before,
+.icon_bus:before,
+.icon_cable_car:before,
+.icon_calendar:before,
+.icon_cancelt:before,
+.icon_check:before,
+.icon_checkbox:before,
+.icon_cling_in_wheelchair:before,
+.icon_close:before,
+.icon_crossed_map:before,
+.icon_crossed_wheelchair:before,
+.icon_currentlocation:before,
+.icon_customercare:before,
+.icon_discover:before,
+.icon_discovernexperience:before,
+.icon_disturbance:before,
+.icon_disturbance_zone:before,
+.icon_doublearrow:before,
+.icon_doublearrow_down:before,
+.icon_doublearrow_left:before,
+.icon_doublearrow_right:before,
+.icon_doublearrow_up:before,
+.icon_em:before,
+.icon_em_in_box:before,
+.icon_eventsnconcerts:before,
+.icon_export:before,
+.icon_facebook:before,
+.icon_family:before,
+.icon_food:before,
+.icon_funicular:before,
+.icon_googleplus:before,
+.icon_hiking:before,
+.icon_import_calendar:before,
+.icon_import_word:before,
+.icon_info:before,
+.icon_info_variante:before,
+.icon_late:before,
+.icon_layers:before,
+.icon_list:before,
+.icon_locate:before,
+.icon_login:before,
+.icon_mail:before,
+.icon_map:before,
+.icon_map_resize50:before,
+.icon_map_resize75:before,
+.icon_marker:before,
+.icon_menu:before,
+.icon_minitimetable:before,
+.icon_minus:before,
+.icon_more_information:before,
+.icon_moviesntheatre:before,
+.icon_museum:before,
+.icon_n:before,
+.icon_nearbylocations:before,
+.icon_ontime:before,
+.icon_person:before,
+.icon_play:before,
+.icon_plus:before,
+.icon_poi:before,
+.icon_print:before,
+.icon_refresh:before,
+.icon_route_alternative:before,
+.icon_search:before,
+.icon_shopping:before,
+.icon_sportnaction:before,
+.icon_star:before,
+.icon_stop:before,
+.icon_taxi:before,
+.icon_test:before,
+.icon_timetable:before,
+.icon_timetabledoc:before,
+.icon_timetabledoc_hover:before,
+.icon_toggle:before,
+.icon_tolate:before,
+.icon_track_change:before,
+.icon_train:before,
+.icon_tram:before,
+.icon_twitter:before,
+.icon_wellness:before,
+.icon_wheelchair:before,
+.icon_wheelchair_in_box:before,
+.icon_zvvferienpass:before,
+.mod_menu .navigation>ul>li>a:before,
+.mod_menu .child .is_current a:before,
+.mod_menu .close:before,
+.mod_menu .socialmedia a.var_facebook:before,
+.mod_menu .socialmedia a.var_twitter:before,
+.mod_menu .socialmedia a.var_googleplus:before,
+.mod_menu_hamburger:before,
+.mod_quicklinks a.var_timetable:before,
+.mod_quicklinks a.var_customercare:before,
+.mod_quicklinks a.var_account:before,
+.mod_quicklinks a.var_search:before,
+.mod_quicklinks a.var_feedback:before,
+.mod_form .datepicker_trigger:before,
+.mod_form .checkbox+.label:before,
+.touch .input_cell.var_select:before,
+.touch .var_select:before,
+.touchevents .input_cell.var_select:before,
+.touchevents .var_select:before,
+.select2-container .select2-choice .select2-arrow:before,
+.select2-container-multi .select2-search-choice-close:before,
+.ui-datepicker .ui-datepicker-prev:before,
+.ui-datepicker .ui-datepicker-next:before {
+    font-family: "Icons";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+    position: absolute
+}
+.ie .icon_aaaaaa:before,
+.ie .icon_account:before,
+.ie .icon_address:before,
+.ie .icon_arrow:before,
+.ie .icon_arrow_down:before,
+.ie .icon_arrow_left:before,
+.ie .icon_arrow_right:before,
+.ie .icon_arrow_up:before,
+.ie .icon_back:before,
+.ie .icon_barsnclubs:before,
+.ie .icon_bearbeitet_close:before,
+.ie .icon_boat:before,
+.ie .icon_bus:before,
+.ie .icon_cable_car:before,
+.ie .icon_calendar:before,
+.ie .icon_cancelt:before,
+.ie .icon_check:before,
+.ie .icon_checkbox:before,
+.ie .icon_cling_in_wheelchair:before,
+.ie .icon_close:before,
+.ie .icon_crossed_map:before,
+.ie .icon_crossed_wheelchair:before,
+.ie .icon_currentlocation:before,
+.ie .icon_customercare:before,
+.ie .icon_discover:before,
+.ie .icon_discovernexperience:before,
+.ie .icon_disturbance:before,
+.ie .icon_disturbance_zone:before,
+.ie .icon_doublearrow:before,
+.ie .icon_doublearrow_down:before,
+.ie .icon_doublearrow_left:before,
+.ie .icon_doublearrow_right:before,
+.ie .icon_doublearrow_up:before,
+.ie .icon_em:before,
+.ie .icon_em_in_box:before,
+.ie .icon_eventsnconcerts:before,
+.ie .icon_export:before,
+.ie .icon_facebook:before,
+.ie .icon_family:before,
+.ie .icon_food:before,
+.ie .icon_funicular:before,
+.ie .icon_googleplus:before,
+.ie .icon_hiking:before,
+.ie .icon_import_calendar:before,
+.ie .icon_import_word:before,
+.ie .icon_info:before,
+.ie .icon_info_variante:before,
+.ie .icon_late:before,
+.ie .icon_layers:before,
+.ie .icon_list:before,
+.ie .icon_locate:before,
+.ie .icon_login:before,
+.ie .icon_mail:before,
+.ie .icon_map:before,
+.ie .icon_map_resize50:before,
+.ie .icon_map_resize75:before,
+.ie .icon_marker:before,
+.ie .icon_menu:before,
+.ie .icon_minitimetable:before,
+.ie .icon_minus:before,
+.ie .icon_more_information:before,
+.ie .icon_moviesntheatre:before,
+.ie .icon_museum:before,
+.ie .icon_n:before,
+.ie .icon_nearbylocations:before,
+.ie .icon_ontime:before,
+.ie .icon_person:before,
+.ie .icon_play:before,
+.ie .icon_plus:before,
+.ie .icon_poi:before,
+.ie .icon_print:before,
+.ie .icon_refresh:before,
+.ie .icon_route_alternative:before,
+.ie .icon_search:before,
+.ie .icon_shopping:before,
+.ie .icon_sportnaction:before,
+.ie .icon_star:before,
+.ie .icon_stop:before,
+.ie .icon_taxi:before,
+.ie .icon_test:before,
+.ie .icon_timetable:before,
+.ie .icon_timetabledoc:before,
+.ie .icon_timetabledoc_hover:before,
+.ie .icon_toggle:before,
+.ie .icon_tolate:before,
+.ie .icon_track_change:before,
+.ie .icon_train:before,
+.ie .icon_tram:before,
+.ie .icon_twitter:before,
+.ie .icon_wellness:before,
+.ie .icon_wheelchair:before,
+.ie .icon_wheelchair_in_box:before,
+.ie .icon_zvvferienpass:before,
+.ie .mod_menu .navigation>ul>li>a:before,
+.mod_menu .ie .navigation>ul>li>a:before,
+.ie .mod_menu .child .is_current a:before,
+.mod_menu .child .is_current .ie a:before,
+.ie .mod_menu .close:before,
+.mod_menu .ie .close:before,
+.ie .mod_menu .socialmedia a.var_facebook:before,
+.mod_menu .socialmedia .ie a.var_facebook:before,
+.ie .mod_menu .socialmedia a.var_twitter:before,
+.mod_menu .socialmedia .ie a.var_twitter:before,
+.ie .mod_menu .socialmedia a.var_googleplus:before,
+.mod_menu .socialmedia .ie a.var_googleplus:before,
+.ie .mod_menu_hamburger:before,
+.ie .mod_quicklinks a.var_timetable:before,
+.mod_quicklinks .ie a.var_timetable:before,
+.ie .mod_quicklinks a.var_customercare:before,
+.mod_quicklinks .ie a.var_customercare:before,
+.ie .mod_quicklinks a.var_account:before,
+.mod_quicklinks .ie a.var_account:before,
+.ie .mod_quicklinks a.var_search:before,
+.mod_quicklinks .ie a.var_search:before,
+.ie .mod_quicklinks a.var_feedback:before,
+.mod_quicklinks .ie a.var_feedback:before,
+.ie .mod_form .datepicker_trigger:before,
+.mod_form .ie .datepicker_trigger:before,
+.ie .mod_form .checkbox+.label:before,
+.mod_form .ie .checkbox+.label:before,
+.ie .touch .input_cell.var_select:before,
+.touch .ie .input_cell.var_select:before,
+.ie .touch .var_select:before,
+.touch .ie .var_select:before,
+.ie .touchevents .input_cell.var_select:before,
+.touchevents .ie .input_cell.var_select:before,
+.ie .touchevents .var_select:before,
+.touchevents .ie .var_select:before,
+.ie .select2-container .select2-choice .select2-arrow:before,
+.select2-container .select2-choice .ie .select2-arrow:before,
+.ie .select2-container-multi .select2-search-choice-close:before,
+.select2-container-multi .ie .select2-search-choice-close:before,
+.ie .ui-datepicker .ui-datepicker-prev:before,
+.ui-datepicker .ie .ui-datepicker-prev:before,
+.ie .ui-datepicker .ui-datepicker-next:before,
+.ui-datepicker .ie .ui-datepicker-next:before {
+    line-height: 1.1
+}
+.icon_aaaaaa {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_aaaaaa:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_account {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_account:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_address {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_address:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_arrow {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_arrow:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_arrow_down {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_arrow_down:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_arrow_left {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_arrow_left:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_arrow_right {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_arrow_right:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_arrow_up {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_arrow_up:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_back {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_back:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_barsnclubs {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_barsnclubs:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_bearbeitet_close {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_bearbeitet_close:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_boat {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_boat:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_bus {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_bus:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_cable_car {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_cable_car:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_calendar {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_calendar:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_cancelt {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_cancelt:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_check {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_check:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_checkbox {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_checkbox:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_cling_in_wheelchair {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_cling_in_wheelchair:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_close {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_close:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_crossed_map {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_crossed_map:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_crossed_wheelchair {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_crossed_wheelchair:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_currentlocation {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_currentlocation:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_customercare {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_customercare:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_discover {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_discover:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_discovernexperience {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_discovernexperience:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_disturbance {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_disturbance:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_disturbance_zone {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_disturbance_zone:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_doublearrow {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_doublearrow:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_doublearrow_down {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_doublearrow_down:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_doublearrow_left {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_doublearrow_left:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_doublearrow_right {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_doublearrow_right:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_doublearrow_up {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_doublearrow_up:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_em {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_em:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_em_in_box {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_em_in_box:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_eventsnconcerts {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_eventsnconcerts:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_export {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_export:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_facebook {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_facebook:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_family {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_family:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_food {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_food:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_funicular {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_funicular:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_googleplus {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_googleplus:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_hiking {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_hiking:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_import_calendar {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_import_calendar:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_import_word {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_import_word:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_info {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_info:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_info_variante {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_info_variante:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_late {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_late:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_layers {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_layers:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_list {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_list:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_locate {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_locate:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_login {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_login:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_mail {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_mail:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_map {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_map:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_map_resize50 {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_map_resize50:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_map_resize75 {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_map_resize75:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_marker {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_marker:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_menu {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_menu:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_minitimetable {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_minitimetable:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_minus {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_minus:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_more_information {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_more_information:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_moviesntheatre {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_moviesntheatre:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_museum {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_museum:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_n {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_n:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_nearbylocations {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_nearbylocations:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_ontime {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_ontime:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_person {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_person:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_play {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_play:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_plus {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_plus:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_poi {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_poi:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_print {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_print:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_refresh {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_refresh:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_route_alternative {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_route_alternative:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_search {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_search:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_shopping {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_shopping:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_sportnaction {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_sportnaction:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_star {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_star:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_stop {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_stop:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_taxi {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_taxi:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_test {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_test:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_timetable {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_timetable:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_timetabledoc {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_timetabledoc:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_timetabledoc_hover {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_timetabledoc_hover:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_toggle {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_toggle:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_tolate {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_tolate:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_track_change {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_track_change:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_train {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_train:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_tram {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_tram:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_twitter {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_twitter:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_wellness {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_wellness:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_wheelchair {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_wheelchair:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_wheelchair_in_box {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_wheelchair_in_box:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+.icon_zvvferienpass {
+    padding: .5em .5em;
+    position: relative
+}
+.icon_zvvferienpass:before {
+    font-size: 1em;
+    content: "";
+    text-indent: 0;
+    top: 50%;
+    margin-top: -0.5em;
+    speak: none;
+    left: 50%;
+    margin-left: -0.5em
+}
+
+.zvv_line,
+.zvv_line_vbztram {
+    padding: 0.35714em 0.28571em 0.28571em;
+    margin-left: 0.22222em;
+    white-space: nowrap;
+    line-height: 1;
+    border-radius: 0.22222em;
+    border-radius: 0.22222rem;
+    color: white;
+    font-style: normal;
+    font-size: 0.77778em;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    min-width: 2.42857em
+}
+.zvv_icon {
+    padding-right: 0.83333em
+}
+.zvv_icon:before {
+    font-size: 1.44444em
+}
+.zvv_line {
+    background-color: #000
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "ff-meta";
+  src: url("MetaWebPro-Normal.eot");
+  src: url("MetaWebPro-Normal.eot?#iefix") format("embedded-opentype"), url("MetaWebPro-Normal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ff-meta";
+  src: url("MetaWebPro-Bold.eot");
+  src: url("MetaWebPro-Bold.eot?#iefix") format("embedded-opentype"), url("MetaWebPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+body {
+  font-family: "ff-meta",sans-serif;
+  color: #636363;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5em;
+  white-space: nowrap;
+  line-height: 1.75;
+}
+
+div.container div.conn div.overview {
+  box-sizing: border-box;
+  border: 2px solid #CBCBCB;
+  border-radius: 4px;
+  padding: 0px;
+  margin-bottom: 12px;
+  transition: border 0.2s ease 0s, color 0.2s ease 0s, box-shadow 0.35s ease 0s;
+  position: relative;
+}
+
+div.container div.conn div.overview div.bar div.item {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  font-size: 18px;
+  padding: 5px 10px;
+  position: relative;
+  margin: 5px 0px;
+  white-space: nowrap;
+  height: 42px;
+}
+
+div.container div.item.time {
+  width: 150px;
+}
+
+div.container div.item.time-abs {
+  width: 70px;
+}
+
+div.container div.item.product {
+  width: 95px;
+}
+
+div.container div.item.direction {
+  position: relative;
+  border-right: medium none;
+  white-space: nowrap;
+  width: 600px;
+}
+
+div.container div.item.with-border {
+  border-right: 2px solid #CBCBCB;
+}
+
+div.container div.item.info-text {
+  color: red;
+  font-size: 0.6em !important;
+  line-height: 2;
+}
