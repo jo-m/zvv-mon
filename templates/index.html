@@ -46,7 +46,7 @@
               <span class='zvv_line'
                 style="background:#{{ row.product.color.bg }};
 			                 color:#{{ row.product.color.fg }};
-			                 {% if row.product.color.bg == 'FFFFFF' %}
+			                 {% if row.product.color.bg | lower == 'ffffff' %}
 			                 border:1px solid #cbcbcb;
 			                 {% endif %}"
                 title="{{ row.product.name }}">
