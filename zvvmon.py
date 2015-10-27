@@ -6,30 +6,50 @@ from flask import (
     send_from_directory,
 )
 import requests
+import json
 from datetime import datetime
 
 app = Flask(__name__)
 
-def get_zvv_data(station_name):
-    now = datetime.now()
+def gets_suggestion(text):
+    url = 'http://online.fahrplan.zvv.ch/bin/ajax-getstop.exe/dn'
+    data = {
+        'encoding': 'utf-8',
+        'start': 1,
+        'getstop': 1,
+        'suggestMethod': None,
+        'S': text,
+        'REQ0JourneyStopsS0A': 1,
+        'REQ0JourneyStopsB': 10,
+    }
+    r = requests.get(url, params=data)
+    # have to strip away Javascript returned
+    return json.loads(r.text[8:-22])['suggestions']
+
+def get_zvv_data(station_name, station_id):
     data = {
         'maxJourneys': 8,
         # 'input': 'Zürich,+Hardplatz',
         # 'time': '10:00',
         # 'data': '07.07.15',
-        # 'time': now.strftime('%H:%M'),
-        # 'date': now.strftime('%d.%m.%y'),
+        'REQStationS0ID': station_id,
         'input': station_name,
         'boardType': 'dep',
         'start': 1,
-        'tpl': 'stbResult2json'
+        'tpl': 'stbResult2json',
     }
     r = requests.post('http://online.fahrplan.zvv.ch/bin/stboard.exe/dny', data=data)
     return r.json()
 
 @app.route('/<station_name>')
 def root(station_name='Zürich,+Haldenegg'):
-    data = get_zvv_data(station_name)
+    stations = gets_suggestion(station_name)
+    if len(stations) == 0:
+        return render_template('notfound.html'), 404
+
+    name, sid = stations[0]['value'], stations[0]['id']
+    data = get_zvv_data(name, sid)
+
     return render_template('index.html',
         station=data['station'],
         conns=data['connections'])
