@@ -11,3 +11,23 @@ Die Daten sind in Echt-Zeit und berücksichtigen auch Verspätungen etc.
 
     # run app
     ./zvvmon.py
+
+## Setup on server
+
+    sudo apt-get install python3-pip
+    sudo adduser zvv
+    sudo passwd -l zvv
+    sudo su zvv
+    cd
+    pip3 install --user virtualenv
+    git clone https://github.com/jo-m/zvv-mon.git
+    cd zvv-mon
+    ~/.local/bin/virtualenv -p python3 .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    crontab -e
+
+    # add this line:
+    @reboot cd /home/zvv/zvv-mon/; ./zvvmon.py
+
+After a reboot, the script should be reachable at <http://host:5000/>.
