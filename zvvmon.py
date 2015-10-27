@@ -14,12 +14,12 @@ def get_zvv_data():
     now = datetime.now()
     data = {
         'maxJourneys': 8,
-        # 'input': 'Zürich,+Haldenegg',
-        'input': 'Zürich,+Hardplatz',
-        # 'time': now.strftime('%H:%M'),
-        'time': '10:00',
-        # 'date': now.strftime('%d.%m.%y'),
-        'data': '07.07.15',
+        # 'input': 'Zürich,+Hardplatz',
+        # 'time': '10:00',
+        # 'data': '07.07.15',
+        'input': 'Zürich,+Haldenegg',
+        'time': now.strftime('%H:%M'),
+        'date': now.strftime('%d.%m.%y'),
         'boardType': 'dep',
         'start': 1,
         'tpl': 'stbResult2json'
