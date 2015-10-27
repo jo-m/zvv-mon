@@ -44,5 +44,4 @@ def send_js(path):
     return send_from_directory('static', path)
 
 if __name__ == '__main__':
-    app.debug = True
     app.run()
