@@ -10,14 +10,14 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-def get_zvv_data():
+def get_zvv_data(station_name):
     now = datetime.now()
     data = {
         'maxJourneys': 8,
         # 'input': 'Zürich,+Hardplatz',
         # 'time': '10:00',
         # 'data': '07.07.15',
-        'input': 'Zürich,+Haldenegg',
+        'input': station_name,
         'time': now.strftime('%H:%M'),
         'date': now.strftime('%d.%m.%y'),
         'boardType': 'dep',
@@ -27,12 +27,16 @@ def get_zvv_data():
     r = requests.post('http://online.fahrplan.zvv.ch/bin/stboard.exe/dny', data=data)
     return r.json()
 
-@app.route('/')
-def root():
-    data = get_zvv_data()
+@app.route('/<station_name>')
+def root(station_name='Zürich,+Haldenegg'):
+    data = get_zvv_data(station_name)
     return render_template('index.html',
         station=data['station'],
         conns=data['connections'])
+
+@app.route('/')
+def root_noarg():
+    return root()
 
 
 @app.route('/static/<path:path>')
