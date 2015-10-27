@@ -17,9 +17,9 @@ def get_zvv_data(station_name):
         # 'input': 'Zürich,+Hardplatz',
         # 'time': '10:00',
         # 'data': '07.07.15',
+        # 'time': now.strftime('%H:%M'),
+        # 'date': now.strftime('%d.%m.%y'),
         'input': station_name,
-        'time': now.strftime('%H:%M'),
-        'date': now.strftime('%d.%m.%y'),
         'boardType': 'dep',
         'start': 1,
         'tpl': 'stbResult2json'
