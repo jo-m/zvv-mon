@@ -31,6 +31,12 @@
               {% if row.mainLocation.countdown | int < 0 %}
               ago
               {% endif %}
+
+              {% if row.mainLocation.realTime.hasRealTime %}
+                {% if row.mainLocation.realTime.delay | int > 0 %}
+                  (+{{ row.mainLocation.realTime.delay | int }})
+                {% endif %}
+              {% endif %}
             </div>
             <!-- <div class="time-abs item with-border">
               {{ row.mainLocation.time }}
