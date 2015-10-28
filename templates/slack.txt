@@ -1,5 +1,6 @@
 Timetable for *{{ station.name | unescape | safe }}*
 \n
+\n
 {% for row in conns %}
   {% if row.mainLocation.countdown | int >= 0 %}
     In^
@@ -24,4 +25,5 @@ Timetable for *{{ station.name | unescape | safe }}*
   {% endif %}
   \n
 {% endfor %}
+\n
 {{ web_url }}
