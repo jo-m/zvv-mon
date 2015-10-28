@@ -41,4 +41,12 @@ hinzufügen:
     # add this line:
     @reboot cd /home/zvv/zvv-mon/; ./zvvmon.py
 
-After a reboot, the script should be reachable at <http://host:5000/>.
+After a reboot, the script should be reachable at <http://example.com:5000/>.
+
+## Slack setup
+Add a new slack command here: <https://<domain>.slack.com/services/new/slash-commands>.
+
+* URL: http://<example.com:5000/slack_api/>
+* Method: `GET`
+
+Thats it! You can now use `/zvv Station Name` from Slack.

@@ -39,11 +39,11 @@ def get_zvv_data(station_name, station_id, maxJourneys=8):
     """
     data = {
         'maxJourneys': maxJourneys,
-        'input': 'Zürich,+Hardplatz',
-        'time': '10:00',
-        'data': '07.07.15',
-        # 'REQStationS0ID': station_id,
-        # 'input': station_name,
+        # 'input': 'Zürich,+Hardplatz',
+        # 'time': '10:00',
+        # 'data': '07.07.15',
+        'REQStationS0ID': station_id,
+        'input': station_name,
         'boardType': 'dep',
         'start': 1,
         'tpl': 'stbResult2json',
@@ -61,7 +61,7 @@ def slack_api():
         return 'Station not found'
 
     name, sid = stations[0]['value'], stations[0]['id']
-    data = get_zvv_data(name, sid, maxJourneys=4)
+    data = get_zvv_data(name, sid, 4)
 
     return render_template('slack.txt',
         station=data['station'],
