@@ -12,6 +12,17 @@ Die Daten sind in Echt-Zeit und berücksichtigen auch Verspätungen etc.
     # run app
     ./zvvmon.py
 
+Die App ist nun hier erreichbar: <http://localhost:5000>. Um andere
+Haltestellen abzufragen, einfach als Pfad den Namen anhängen:
+
+* <http://localhost:5000/Zürich,+Central>
+* <http://localhost:5000/Zürich,+Klusplatz>
+
+Um die Seite automatisch neu zu laden, den `refresh=<sekunden>` Parameter
+hinzufügen:
+
+<http://localhost:5000/Zürich,+Central?refresh=20>
+
 ## Setup on server
 
     sudo apt-get install python3-pip

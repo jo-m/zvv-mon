@@ -1,13 +1,14 @@
 #!.venv/bin/python3
 
-from flask import (
-    Flask,
-    render_template,
-    send_from_directory,
-)
-import requests
-import json
 from datetime import datetime
+from flask import (
+   Flask,
+   render_template,
+   request,
+   send_from_directory,
+)
+import json
+import requests
 
 app = Flask(__name__)
 
@@ -52,7 +53,8 @@ def root(station_name='Zürich,+Haldenegg'):
 
     return render_template('index.html',
         station=data['station'],
-        conns=data['connections'])
+        conns=data['connections'],
+        refresh=request.args.get('refresh', None))
 
 @app.route('/')
 def root_noarg():
