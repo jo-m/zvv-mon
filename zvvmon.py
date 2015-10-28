@@ -65,7 +65,7 @@ def slack_api():
         return 'Station not found'
 
     name, sid = stations[0]['value'], stations[0]['id']
-    data = get_zvv_data(name, sid, 4)
+    data = get_zvv_data(name, sid, 5)
 
     return render_template('slack.txt',
         station=data['station'],

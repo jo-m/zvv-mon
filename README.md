@@ -1,4 +1,4 @@
-# ZVV Abfahrtszeiten
+# ZVV Abfahrtszeiten, mit Slack Integration
 
 Zeigt die Abfahrtszeiten von Haltestellen des Züricher Verkehrsverbunds an.
 Die Daten sind in Echt-Zeit und berücksichtigen auch Verspätungen etc.
