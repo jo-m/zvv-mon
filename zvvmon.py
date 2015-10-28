@@ -10,6 +10,8 @@ from flask import (
 import json
 import requests
 
+DEFAULT_STATION = 'Zürich,+Haldenegg'
+
 app = Flask(__name__)
 
 def gets_suggestion(text):
@@ -42,8 +44,21 @@ def get_zvv_data(station_name, station_id):
     r = requests.post('http://online.fahrplan.zvv.ch/bin/stboard.exe/dny', data=data)
     return r.json()
 
+@app.route('/slack_api/')
+def slack_api():
+    stations = gets_suggestion(request.args.get('refresh', DEFAULT_STATION))
+    if len(stations) == 0:
+        return 'Station not found'
+
+    name, sid = stations[0]['value'], stations[0]['id']
+    data = get_zvv_data(name, sid)
+
+    return render_template('slack.txt',
+        station=data['station'],
+        conns=data['connections'])
+
 @app.route('/<station_name>')
-def root(station_name='Zürich,+Haldenegg'):
+def root(station_name=DEFAULT_STATION):
     stations = gets_suggestion(station_name)
     if len(stations) == 0:
         return render_template('notfound.html'), 404
