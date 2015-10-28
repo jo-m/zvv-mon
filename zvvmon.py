@@ -4,12 +4,14 @@ from datetime import datetime
 from flask import (
    Flask,
    render_template,
+   Response,
    request,
    send_from_directory,
 )
 import html
 import json
 import requests
+import urllib.parse
 
 DEFAULT_STATION = 'Zürich,+Haldenegg'
 
@@ -66,10 +68,16 @@ def slack_api():
 
     name, sid = stations[0]['value'], stations[0]['id']
     data = get_zvv_data(name, sid, 5)
+    web_url = '%s/%s' % (request.url_root.strip('/'), name.replace(' ', '+'))
 
-    return render_template('slack.txt',
-        station=data['station'],
-        conns=data['connections'])
+    text = render_template('slack.txt',
+                           station=data['station'],
+                           conns=data['connections'],
+                           web_url=web_url)
+
+    return Response(response=text,
+                    status=200,
+                    mimetype='text/plain')
 
 @app.route('/<station_name>')
 def root(station_name=DEFAULT_STATION):

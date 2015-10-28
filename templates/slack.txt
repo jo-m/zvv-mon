@@ -1,5 +1,7 @@
-Timetable for _{{ station.name | unescape | safe }}_
+Timetable for *{{ station.name | unescape | safe }}*
 
 {% for row in conns %}{% if row.mainLocation.countdown | int >= 0 %}In {% endif %}*{{ row.mainLocation.countdown | int | abs }}* min{% if row.mainLocation.countdown | int < 0 %} ago{% endif %}{% if row.mainLocation.realTime.hasRealTime %}{% if row.mainLocation.realTime.delay | int > 0 %} (+{{ row.mainLocation.realTime.delay | int }}){% endif %}{% endif %} {% if row.product.icon == 'icon_tram' %}🚋{% endif %}{% if row.product.icon == 'icon_train' %}🚅{% endif %}{% if row.product.icon == 'icon_bus' %}🚌{% endif %}{% if row.product.icon == 'icon_cable_car' %}🚠{% endif %}{% if row.product.icon == 'icon_boat' %}⛴{% endif %}{% if row.product.icon == 'icon_funicular' %}🚠{% endif %} `{{ row.product.line }}` to {{ row.product.direction | unescape | safe }}{% if row.himMessages | length > 0 %}
 ‼️ _{{ row.himMessages[0].header | unescape | safe }}_{% endif %}
 {% endfor %}
+
+{{ web_url }}

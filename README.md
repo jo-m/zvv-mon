@@ -41,7 +41,10 @@ hinzufügen:
     # add this line:
     @reboot cd /home/zvv/zvv-mon/; ./zvvmon.py
 
-After a reboot, the script should be reachable at <http://example.com:5000/>.
+    # optionally, for keeping a log:
+    @reboot cd /home/zvv/zvv-mon/; ./zvvmon.py &>> /home/zvv/zvv-log.txt
+
+After a reboot, the app should be reachable at <http://example.com:5000/>.
 
 ## Slack setup
 Add a new slack command here: <https://<domain>.slack.com/services/new/slash-commands>.
