@@ -7,6 +7,7 @@ from flask import (
    request,
    send_from_directory,
 )
+import html
 import json
 import requests
 
@@ -15,6 +16,9 @@ DEFAULT_STATION = 'Zürich,+Haldenegg'
 app = Flask(__name__)
 
 def gets_suggestion(text):
+    """
+    Get a station (id) by (incomplete) name, uses the fuzzy search API.
+    """
     url = 'http://online.fahrplan.zvv.ch/bin/ajax-getstop.exe/dn'
     data = {
         'encoding': 'utf-8',
@@ -30,6 +34,9 @@ def gets_suggestion(text):
     return json.loads(r.text[8:-22])['suggestions']
 
 def get_zvv_data(station_name, station_id):
+    """
+    Fetch the timetable for a given station name and id
+    """
     data = {
         'maxJourneys': 8,
         # 'input': 'Zürich,+Hardplatz',
@@ -46,6 +53,9 @@ def get_zvv_data(station_name, station_id):
 
 @app.route('/slack_api/')
 def slack_api():
+    """
+    API for slack
+    """
     stations = gets_suggestion(request.args.get('refresh', DEFAULT_STATION))
     if len(stations) == 0:
         return 'Station not found'
@@ -59,6 +69,9 @@ def slack_api():
 
 @app.route('/<station_name>')
 def root(station_name=DEFAULT_STATION):
+    """
+    Standard endpoint
+    """
     stations = gets_suggestion(station_name)
     if len(stations) == 0:
         return render_template('notfound.html'), 404
@@ -73,12 +86,21 @@ def root(station_name=DEFAULT_STATION):
 
 @app.route('/')
 def root_noarg():
+    """
+    Standard endpoint with no args
+    """
     return root()
-
 
 @app.route('/static/<path:path>')
 def send_js(path):
+    """
+    Serves static files (CSS, Fonts)
+    """
     return send_from_directory('static', path)
+
+@app.template_filter('unescape')
+def unescape(arg):
+    return html.unescape(arg)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
