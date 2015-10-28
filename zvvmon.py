@@ -56,7 +56,11 @@ def slack_api():
     """
     API for slack
     """
-    stations = gets_suggestion(request.args.get('text', DEFAULT_STATION))
+    station = request.args.get('text', '').strip()
+    if len(station) == 0:
+        station = DEFAULT_STATION
+
+    stations = gets_suggestion(station)
     if len(stations) == 0:
         return 'Station not found'
 
