@@ -75,6 +75,11 @@ def slack_api():
                            conns=data['connections'],
                            web_url=web_url)
 
+    text = text.replace('\n', '') \
+               .replace('\\n', '\n') \
+               .replace('  ', '') \
+               .replace('^', ' ')
+
     return Response(response=text,
                     status=200,
                     mimetype='text/plain')
